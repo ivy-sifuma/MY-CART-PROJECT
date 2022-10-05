@@ -14,7 +14,7 @@ function handleAddToCartClick() {
      isInCart: !item.isInCart,
     }),
    }
-}
+
    .then((response)=>response.json())
    .then((updatedItem)=>onUpdatedItem(updatedItem))
 }
@@ -37,9 +37,9 @@ function handleDeleteClick(){
         </button>
        
       <button className="remove">Delete</button>
-      <button className="remove" onClick={handleDeleteClick}>Delete</button>
+      <button className="remove" onClick={handleDelete}>Delete</button>
     </li>
   );
 }
-
+}
 export default Item;
