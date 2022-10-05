@@ -17,9 +17,8 @@ function handleAddToCartClick() {
 
    .then((response)=>response.json())
    .then((updatedItem)=>onUpdatedItem(updatedItem))
-,
-
-function handleDeleteClick(){
+   
+   function handleDeleteClick(){
   fetch(`http://localhost:4000/items/${item.id}`,{
     method:"DELETE"
   })
