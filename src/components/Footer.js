@@ -9,7 +9,7 @@ return (
         {isDarkMode ? "Dark" : "Light"} Mode
       </button>
     </footer>
-)
+);
 
 
 }

@@ -80,6 +80,10 @@ footer h2 {
   padding: 1rem 0;
 }
 
+header button {
+  background: var(--yellow);
+}
+
 .Filter {
   display: flex;
   justify-content: space-between;
