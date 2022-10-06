@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 
-// destructure the onAddItem prop
+
 function ItemForm( {onAddItem}) {
   const [name, setName] = useState("");
   const [category, setCategory] = useState("Produce");
 
-  // Add function to handle submissions
+  
   function handleSubmit(e) {
     e.preventDefault();
     const itemData = {
@@ -21,7 +21,7 @@ function ItemForm( {onAddItem}) {
     body: JSON.stringify(itemData),
   })
 
-  // call the onAddItem prop with newItem
+  
   .then((r) => r.json())
   .then((newItem) => console.log(newItem));
     console.log(itemData);
@@ -30,7 +30,7 @@ function ItemForm( {onAddItem}) {
   }
      
   return (
-    //set up the form to call handleSubmit when the form is submitted
+    
     <form className="NewItem" onSubmit={handleSubmit}>
       <label>
         Name:
