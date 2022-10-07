@@ -1,9 +1,10 @@
 import React from 'react'
+const apiHost ="my-shopping-cart3.herokuapp.com/items"
 
 function Item({ item, onUpdateItem, onDeleteItem }) {
   function handleAddToCartClick() {
     // console.log('clicked item:', item)
-    fetch(`http://localhost:4000/items/${item.id}`, {
+    fetch(`apiHost/${item.id}`, {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json',
@@ -18,7 +19,7 @@ function Item({ item, onUpdateItem, onDeleteItem }) {
 
   function handleDeleteClick() {
     console.log(item)
-    fetch(`http://localhost:4000/items/${item.id}`, {
+    fetch(`apiHost/${item.id}`, {
       method: 'DELETE',
     })
       .then((r) => r.json())
