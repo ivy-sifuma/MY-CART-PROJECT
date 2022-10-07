@@ -9,7 +9,7 @@ function ShoppingList() {
 
   
   useEffect(() => {
-    fetch("http://localhost:4000/items")
+    fetch("apiHost")
     .then((r) => r.json())
     .then((items) => setItems(items));
   }, []);
