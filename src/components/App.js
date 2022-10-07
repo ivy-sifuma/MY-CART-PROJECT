@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import ShoppingList from "./ShoppingList";
 import Header from "./Header";
 import Footer from "./Footer";
-import About from "./Home";
+
+
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -19,5 +20,7 @@ function App() {
     </div>
   );
 }
+
+
 
 export default App;

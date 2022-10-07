@@ -1,21 +1,14 @@
-import React from "react";
-import React from "react";
+import React, { Component } from 'react';
 
-function About({ isDarkMode, onDarkModeClick }) {
+class About extends Component {
+  render() {
     return (
-      <header>
-        <h2>About 
-        </h2>
-        
-        <button onClick={onDarkModeClick}>
-          {isDarkMode ? "Dark" : "Light"} Mode
-        </button>
-      </header>
-  
-  
-  
+        <div>
+          <h2>About</h2>
+        </div>
     );
   }
-  
-  export default Home;
-  
+}
+
+export default About;
+
