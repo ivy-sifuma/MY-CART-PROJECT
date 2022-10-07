@@ -9,6 +9,7 @@ function Header({ isDarkMode, onDarkModeClick }) {
 
       <a href="#home">HOME <br></br>
       <img src="https://s3.envato.com/files/141375302/milk-splash-fruits-on-pink-background.jpg" alt="" width="70" height="70"></img> </a>
+
       <a href="about us">ABOUT US <br></br>
       <img src="https://s22908.pcdn.co/wp-content/uploads/2022/01/online-payment-comparison.jpg" alt="" width="70" height="70"></img> </a>
       
