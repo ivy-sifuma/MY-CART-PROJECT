@@ -38,7 +38,7 @@ function ShoppingList() {
   function handleDeleteItem(deletedItem){
     const updatedItems = items.filter((item)=>item.id !== deletedItem.id);
     setItems(updatedItems)
-    console.log("In shoppingCart:",deletedItem)
+  
   }
 
 
