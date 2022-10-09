@@ -26,7 +26,7 @@ function Item({ item, onUpdateItem, onDeleteItem }) {
       .then(() => onDeleteItem(item));
   }
 
-function Item({ item }) {
+
   return (
     <li className={item.isInCart ? "in-cart" : ""}>
     <li className={item.isInCart ? 'in-cart' : ''}>
@@ -50,6 +50,6 @@ function Item({ item }) {
     </li>
  ) }
   
-  }
+  
 
 export default Item;

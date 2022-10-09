@@ -13,7 +13,7 @@ function Header({ isDarkMode, onDarkModeClick }) {
       <a href="about us">ABOUT US <br></br>
       <img src="https://s22908.pcdn.co/wp-content/uploads/2022/01/online-payment-comparison.jpg" alt="" width="70" height="70"></img> </a>
       
-      
+
       <button onClick={onDarkModeClick}>
         {isDarkMode ? "Dark" : "Light"} Mode
       </button>
