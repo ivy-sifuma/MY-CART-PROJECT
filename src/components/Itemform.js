@@ -11,6 +11,8 @@ function ItemForm({ onAddItem }) {
       name: name,
       category: category,
       isInCart: false,
+
+      // console.log(itemData)
     }
     fetch('apiHost', {
       method: 'POST',

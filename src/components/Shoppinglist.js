@@ -12,10 +12,11 @@ function ShoppingList() {
     fetch("apiHost")
     .then((r) => r.json())
     .then((items) => setItems(items));
-  }, []);
+  }, [])
 
   function handleAddItem(newItem){
-    setItems([...items,newItem]);
+    setItems([...items,newItem])
+    //console.log("In Shopping List:", newItem)
   }
 
   function handleCategoryChange(category) {
@@ -25,14 +26,12 @@ function ShoppingList() {
   
   function handleUpdateItem(updatedItem) {
     const updatedItems = items.map((item) => {
-      if (item.id === updatedItem.id){
-        return updatedItem;
-      } else {
-        return item;
-      }
-    });
+      return ((item.id === updatedItem.id) ? updatedItem :item)
+      
+      })
+    
     setItems(updatedItems)
-    console.log("In ShoppingCart:", updatedItem);
+    
   }
 
   
