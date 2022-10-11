@@ -3,8 +3,6 @@ import ShoppingList from "./ShoppingList";
 import Header from "./Header";
 import Footer from "./Footer";
 
-
-
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
